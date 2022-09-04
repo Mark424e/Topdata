@@ -1,0 +1,280 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Hjemmeside Opgave 3.3</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/mmdgrid.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc87d7ac19.js" crossorigin="anonymous"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="flex-container">
+    <div class="flex-item"><img id="logo" src="images/BiccMacLogo.svg" alt="Logo"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"><a href="#">Products</a></div>
+    <div class="flex-item"><a href="#">Info</a></div>
+    <div class="flex-item"><a href="#">FAQ</a></div>
+    <div class="flex-item"><a href="#">Contact</a></div>
+    <div class="flex-item"><a href="#"><i class="fas fa-shopping-basket"></i></a></div>
+    <div class="flex-item"><a href="#">Account</a></div>
+</div>
+
+<div class="container">
+
+    <div class="break1">
+        <hr>
+        <h1 class="header1">Winter Sale</h1>
+        <hr>
+    </div>
+
+    <div class="grid-container1 mt-5">
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/LOGO_H510-ELITE-WHITE-1.w293.h293.backdrop.webp" alt="Gaming PC"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <p>ULTIMATE-NZXT,i7-11700F,32G-RAM,RTX3060-12G,1TB-SSD,VANDKØLER-H100x-CORSAIR</p>
+            </div>
+
+            <div class="grid-item-buyBtn mt-3">
+                <button class="buyBtn">Add to basket     <i class="fas fa-shopping-basket"></i></button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/LOGO_220T.w293.h293.backdrop.webp" alt="Gaming PC"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <p>TOP-PRO,i5-10400F,16G-RAM,RTX3060-12G,1TB-SSD-NVMe</p>
+            </div>
+
+            <div class="grid-item-buyBtn mt-3">
+                <button class="buyBtn">Add to basket     <i class="fas fa-shopping-basket"></i></button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/LOGO_175R-2-1.w293.h293.backdrop.webp" alt="Gaming PC"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <p>ULTIMATE-TUF_CORSAIR,RYZEN-5600x,RTX3060-12GB,16GB-RAM,1TB-SSD,WiFi6,BLUETOOTH</p>
+            </div>
+
+            <div class="grid-item-buyBtn mt-3">
+                <button class="buyBtn">Add to basket     <i class="fas fa-shopping-basket"></i></button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/BEQUIET500DX.w293.h293.backdrop.webp" alt="Gaming PC"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <p>BE-QUIET-PC,i5-10400F,RTX3060-12GB,16G-RAM,1TB-SSD-NVMe,BE-QUIET-ROCK2</p>
+            </div>
+
+            <div class="grid-item-buyBtn mt-3">
+                <button class="buyBtn">Add to basket     <i class="fas fa-shopping-basket"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="break2 mt-5">
+        <hr>
+        <h1 class="header2">Fan Favorites</h1>
+        <hr>
+    </div>
+
+    <div class="grid-container2 mt-5">
+        <div class="grid-item">
+
+            <div class="grid-item-gif">
+                <a href="#"><img src="images/220T_Visor.gif" alt="Gaming PC"></a>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-gif">
+                <a href="#"><img src="images/220T_RotaryStack.gif" alt="Gaming PC"></a>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-gif">
+                <a href="#"><img src="images/220T_RAIN.gif" alt="Gaming PC"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="break3 mt-5">
+        <hr>
+        <h1 class="header3">PC Gaming Must Haves</h1>
+        <hr>
+    </div>
+
+    <div class="grid-container3 mt-5">
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/gaming_chair.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse chairs</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/gaming_headset.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse headsets</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/gaming_keyboard.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse keyboards</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/gaming_monitor.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse monitors</button>
+            </div>
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/gaming_mouse.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse mice</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="break4 mt-5">
+        <hr>
+        <h1 class="header3">PC Components</h1>
+        <hr>
+    </div>
+
+    <div class="grid-container4 mt-5">
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/cpu.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse CPUs</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/ssd.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse SSDs</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/graphics_card.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse Graphic Cards</button>
+            </div>
+
+        </div>
+        <div class="grid-item">
+
+            <div class="grid-item-image">
+                <a href="#"><img src="images/ram.png" alt="Gaming gadget"></a>
+            </div>
+
+            <div class="grid-item-text mt-3">
+                <button class="browseBtn">Browse RAM</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer mt-5">
+    <div class="footer-item1">
+        <p>BREDAHLSGADE 1A, 4200 SLAGELSE</p>
+        <p>Telefonnr.: 12345678 (hverdage kl. 15-18 TLF)</p>
+        <p>E-mail: info@biccmac.dk</p>
+        <p>CVR-nummer: 12345678</p>
+        <p>Bankoplysninger: 1234 1234567891 (DanskeBank)</p>
+    </div>
+    <div class="footer-item2"><p>Copyright @ 2021 BiccMac, Inc.</p></div>
+    <div class="footer-item3">
+        <a href="#"><i class="fas fa-facebook fa"></i></a>
+        <a href="#"><i class="fas fa-twitter fa"></i></a>
+        <a href="#"><i class="fas fa-youtube fa"></i></a>
+        <a href="#"><i class="fas fa-instagram fa"></i></a>
+    </div>
+</div>
+
+</body>
+</html>

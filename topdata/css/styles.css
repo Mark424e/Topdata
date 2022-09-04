@@ -1,0 +1,208 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+    background-color: black;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+	color: white;
+    text-align: center;
+    cursor: default;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+
+
+.flex-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content:  space-evenly;
+    align-items: center;
+    background-color: rgba(21,21,21,0.97);
+    padding: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+#logo {
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.flex-item > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Squada One', cursive;
+    font-size: 25px;
+    transition: 0.1s ease-in-out;
+}
+
+.flex-item > a:hover {
+    color: rgba(195,84,255,0.97);
+}
+
+.break1 {
+    margin-top: 215px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-gap: 100px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.grid-item-text {
+    height: 60px;
+}
+
+.grid-item-text {
+    text-align: center;
+    cursor: pointer;
+    transition: 0s;
+}
+
+.grid-item-text:hover {
+    color: red;
+}
+
+.buyBtn {
+    border-color: rgba(195,84,255,0.97);
+    background-color: rgba(0,0,0,0.97);
+    border-radius: 8px;
+    color: rgba(149,71,200,0.97);
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.buyBtn:hover {
+    background-color: rgba(149,71,200,0.97);
+    color: white;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 350px 350px 350px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-gap: 100px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+}
+
+.browseBtn {
+    border-color: rgba(195,84,255,0.97);
+    background-color: rgba(0,0,0,0.97);
+    border-radius: 8px;
+    color: rgba(149,71,200,0.97);
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+
+.browseBtn:hover {
+    background-color: rgba(149,71,200,0.97);
+    color: white;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-gap: 100px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.footer {
+    display: flex;
+    bottom: 0;
+    height: 190px;
+    justify-content:  space-around;
+    background-color: rgba(21,21,21,0.97);
+    align-items: center;
+}
+
+.footer-item1 {
+    height: 150px;
+    flex-basis: 300px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+.footer-item2 {
+    height: 150px;
+    flex-basis: 300px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.footer-item3 {
+    height: 150px;
+    flex-basis: 300px;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+div > p {
+    font-size: smaller;
+}
+
+.footer-item3 > a > i {
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
